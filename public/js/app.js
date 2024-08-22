@@ -4679,48 +4679,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ MovieCard)
 /* harmony export */ });
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 MovieCard.propType = {
-  slug: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired,
-  name: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired,
-  category: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired,
-  thumbnail: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired
+  slug: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string).isRequired,
+  name: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string).isRequired,
+  category: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string).isRequired,
+  thumbnail: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string).isRequired
 };
-function MovieCard(slug, name, category, thumbnail) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+function MovieCard(_ref) {
+  var slug = _ref.slug,
+    name = _ref.name,
+    category = _ref.category,
+    thumbnail = _ref.thumbnail;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
     className: "absolute group overflow-hidden mr-[30px]",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
       src: thumbnail,
       className: "object-cover rounded-[30px] h-[340px] w-[250px]",
       alt: ""
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
       className: "absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black rounded-bl-[28px] rounded-br-[28px]",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "px-7 pb-7",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "font-medium text-xl text-white",
           children: name
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
           className: "mb-0 text-gray-300 text-base mt-[10px]",
           children: category
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
       className: "absolute top-1/2 left-1/2 -translate-y-[500px] group-hover:-translate-y-1/2\r -translate-x-1/2 z-20 transition ease-in-out duration-500",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
         src: "/icons/ic_play.svg",
         className: "",
         width: "50",
         alt: ""
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-      href: slug,
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+      href: "google.com",
       className: "inset-0 absolute z-50"
     })]
   });
@@ -6063,27 +6065,27 @@ function Dashboard() {
             slug: "the-batman-in-love",
             name: "The Batman in Love ".concat(i),
             category: "Comedy",
-            thumbnail: "/images/browse-1.png",
+            thumbnail: "https://picsum.photos/id/1/300/300",
             rating: i + 1
           }, i);
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-        className: "mt-[50px]",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-          className: "font-semibold text-[22px] text-black mb-4",
-          children: "Browse"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_flickity_component__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          className: "gap-[30px]",
-          options: flickityOptions,
-          children: [1, 2, 3, 4, 5, 6, 7].map(function (i) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_MovieCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-              slug: "the-batman-in-love",
-              name: "The Batman in Love ".concat(i),
-              category: "Comedy",
-              thumbnail: "https://picsum.photos/id/1/300/300"
-            }, i);
-          })
-        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "mt-[50px]",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "font-semibold text-[22px] text-black mb-4",
+        children: "Browse"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_flickity_component__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        className: "gap-[30px]",
+        options: flickityOptions,
+        children: [1, 2, 3, 4, 5, 6, 7].map(function (i) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_MovieCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            slug: "the-batman-in-love",
+            name: "The Batman in Love ".concat(i),
+            category: "Comedy",
+            thumbnail: "https://picsum.photos/id/1/300/300"
+          }, i);
+        })
       })]
     })]
   });
