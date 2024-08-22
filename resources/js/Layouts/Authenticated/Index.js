@@ -1,7 +1,7 @@
 import Sidebar from "@/Layouts/Authenticated/Sidebar";
 import Topbar from "@/Layouts/Authenticated/Topbar";
 
-export default function Authenticated ({childred}) {
+export default function Authenticated ({children}) {
     return <>
     <div className="mx-auto max-w-screen hidden lg:block">
 {/* Start Sidebar */}
@@ -13,7 +13,7 @@ export default function Authenticated ({childred}) {
 {/* Start TopBar */}
 <Topbar/>
 {/* End TopBar */}
-    <main>{childred}</main>
+    <main>{children}</main>
     </div>
     </div>
 {/* Start Feature */}
